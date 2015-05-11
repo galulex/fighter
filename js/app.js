@@ -1,7 +1,7 @@
 var stage, key;
 function init() {
+  createjs.Sound.on('fileload', playSound, this);
   createjs.Sound.registerSound('sounds/tmnt.mp3', 'tmnt');
-  createjs.Sound.play('tmnt');
   stage = new createjs.Stage('canvas');
   var circle = new createjs.Shape();
   circle.graphics.beginFill('DeepSkyBlue').drawCircle(0, 0, 50);
@@ -60,4 +60,8 @@ var move = {
 
 function goTo(state){
   leo.gotoAndPlay(state);
+}
+
+function playSound(){
+  createjs.Sound.play('tmnt');
 }
