@@ -34,10 +34,10 @@ var leoData = {
       [276, 54, 39, 52],
     ],
     animations: {
-        stand: { frames: [0,1,2,1], speed: 0.2 },
+        stand: { frames: [0,1,2,1], speed: 0.3 },
         straight: { frames: [3,4,5], next: 'stright', speed: 0.3 },
         back: { frames: [6,7,8,9], next: 'back', speed: 0.3 },
-        sidekick: { frames: [12,11,12], next: 'stand', speed: 0.2 }
+        sidekick: { frames: [12,11,12], next: 'stand', speed: 0.4 }
     }
 };
 var leoSheet = new createjs.SpriteSheet(leoData);
